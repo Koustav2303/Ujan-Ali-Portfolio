@@ -241,17 +241,51 @@ const Contact = () => {
 
       </div>
 
-      {/* Footer Bottom Bar */}
-      <div className="w-full max-w-7xl mx-auto px-6 mt-20 flex flex-col md:flex-row items-center justify-between gap-6 z-10 border-t border-white/10 pt-8">
-        <div className="font-body text-gray-500 text-xs md:text-sm font-semibold tracking-widest uppercase">
-          © {new Date().getFullYear()} Ujan Ali. All Rights Reserved.
+      {/* Cinematic Footer Bottom Bar */}
+      <div className="w-full max-w-7xl mx-auto px-6 mt-32 flex flex-col md:flex-row items-center justify-between gap-10 z-10 border-t border-white/10 pt-12 pb-8 relative">
+        
+        {/* Subtle background glow for the footer */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
+
+        {/* Left: Copyright */}
+        <div className="flex flex-col gap-2 text-center md:text-left order-2 md:order-1">
+          <p className="font-logo text-white text-lg font-bold tracking-widest uppercase">Ujan Ali<span className="text-blue-500">.</span></p>
+          <p className="font-body text-gray-500 text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase">
+            © {new Date().getFullYear()} All Rights Reserved.
+          </p>
+        </div>
+
+        {/* Middle: Developer Signature */}
+        <div className="font-body text-gray-400 text-xs md:text-sm font-semibold tracking-widest uppercase text-center order-1 md:order-2 flex flex-col sm:flex-row items-center gap-2">
+          <span>Engineered with precision by</span>
+          <a 
+            href="https://koustav2303.github.io/koustavpan-portfolio/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center cursor-none"
+          >
+            {/* The text */}
+            <span className="relative z-10 text-blue-400 font-bold group-hover:text-white transition-colors duration-500 px-2 py-1">
+              Koustav Pan
+            </span>
+            
+            {/* Animated underline */}
+            <span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+            
+            {/* Cinematic ambient glow on hover */}
+            <span className="absolute inset-0 bg-blue-500/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></span>
+          </a>
         </div>
         
+        {/* Right: Back to Top */}
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="font-body text-gray-400 text-xs md:text-sm font-bold tracking-[0.2em] uppercase hover:text-white transition-colors"
+          className="group flex items-center gap-4 font-body text-gray-500 text-xs md:text-sm font-bold tracking-[0.2em] uppercase hover:text-white transition-colors cursor-none order-3 md:order-3"
         >
-          Back To Top ↑
+          Back To Top 
+          <div className="w-10 h-10 rounded-full border border-gray-700 bg-white/5 backdrop-blur-md flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+             <ArrowUpRight className="text-gray-400 group-hover:text-dark transition-colors duration-500" size={18} />
+          </div>
         </button>
       </div>
     </section>
