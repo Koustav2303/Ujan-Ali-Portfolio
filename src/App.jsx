@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
+// Import the new component
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <About />
       <Services />
       <Work />
+      <Testimonials />
       <Contact />
     </div>
   );
