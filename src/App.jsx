@@ -4,9 +4,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+// Import the new Arsenal component
+import Arsenal from './components/Arsenal';
 import Work from './components/Work';
 import Testimonials from './components/Testimonials';
-// Import the new Pricing component
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 
@@ -18,9 +19,10 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Arsenal />
       <Work />
-      <Pricing />
       <Testimonials />
+      <Pricing />
       <Contact />
     </div>
   );
