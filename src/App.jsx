@@ -4,12 +4,13 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-// Import the new Arsenal component
 import Arsenal from './components/Arsenal';
 import Work from './components/Work';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
+// Import the bot
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Testimonials />
       <Pricing />
       <Contact />
+      <ChatBot />
     </div>
   );
 }

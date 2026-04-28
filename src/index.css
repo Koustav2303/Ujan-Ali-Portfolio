@@ -79,3 +79,15 @@ html.lenis, html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* =========================================
+   CUSTOM UTILITIES
+   ========================================= */
+/* Utility to hide scrollbar for chat windows/specific containers */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
