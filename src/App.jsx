@@ -6,10 +6,11 @@ import About from './components/About';
 import Services from './components/Services';
 import Arsenal from './components/Arsenal';
 import Work from './components/Work';
+// Import the new ReelVault component
+import ReelVault from './components/ReelVault';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
-// Import the bot
 import ChatBot from './components/ChatBot';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Services />
       <Arsenal />
       <Work />
+      <ReelVault />
       <Testimonials />
       <Pricing />
       <Contact />
